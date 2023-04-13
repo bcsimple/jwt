@@ -21,10 +21,10 @@
 echo $TOKEN | jwt 
 
 2.解析part1并且时间可读
-echo $TOKEN | jwt -p -t 
+echo $TOKEN | jwt -p 1 -t 
 
 3.解析part2并且时间可读
-echo $TOKEN | jwt -p -t 
+echo $TOKEN | jwt -p 2 -t 
 
 4.指定secret校验token
 echo $TOKEN | jwt -v -s "123"
