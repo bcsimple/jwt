@@ -39,11 +39,11 @@ echo $TOKEN | jwt -v --pub sa.pub
 
 ```shell
 ]# kubectl create sa zhangsan
-]# token=`kubectl create token zhangsan` && echo $token
+]# TOKEN=`kubectl create token zhangsan` && echo $TOKEN
 
 example token:
 eyJhbGciOiJSUzI1NiIsImtpZCI6IjR1R0hUWTVnZGg1dDZMWXI3dmlzWm9pQ0ZUeXliS2ZXaHFQa0ljUnJXeTQifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiXSwiZXhwIjoxNjgxMzgwNDI1LCJpYXQiOjE2ODEzNzY4MjUsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJkZWZhdWx0Iiwic2VydmljZWFjY291bnQiOnsibmFtZSI6InpoYW5nc2FuIiwidWlkIjoiZjA4NTUwZGEtY2Q2YS00YmU5LWJjYTctNWFmYWFiMGM4MTRjIn19LCJuYmYiOjE2ODEzNzY4MjUsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZWZhdWx0OnpoYW5nc2FuIn0.PJRs31Ec-uOWP2UR6z3Rd2PmVsRyEU__X74rN7mLLNTX8qc_dtiZe_kvDFdZN6FCLlVtdOBox-XYBgD3aLy2I8HKSoEKKOCf7vYzMO7NdOR3kADT86QHTi4DpKyEyUcjydQLb6SP_RIWVwk0H9Nve9VIm22XKEGQplhF9ky0hHdSmdVC1LwqDf9TTASrIPZioj12Rf49H9d5_LumhWk1AmvBBOO9J5MRnU-stKeELnygZb7qpYRE0dbIOJ5o1kvB9OI1pfFtkkf7Lhwo_feylMIjJ_an092xRhQIlpok8W-1NJGUob1lAXTigvWeXEAoxyAUe_PWGAuHIZ6xm6TYfw
 
-]# echo $token | jwt -t 
+]# echo $TOKEN | jwt -t 
 ```
 
