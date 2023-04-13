@@ -35,7 +35,7 @@ echo $TOKEN | jwt -v --pub sa.pub
 
 
 
-#### kubernetes Token Parse
+#### Kubernetes Token Parse
 
 ```shell
 ]# kubectl create sa zhangsan
