@@ -104,7 +104,7 @@ func getSignatureMethod(segment string) string {
 }
 
 func getMapBySegment(segment string) map[string]interface{} {
-	base, err := base64.RawStdEncoding.DecodeString(segment)
+	base, err := base64.RawURLEncoding.DecodeString(segment)
 	checkError(err)
 	dataMap := make(map[string]interface{}, 0)
 	checkError(json.Unmarshal(base, &dataMap))
